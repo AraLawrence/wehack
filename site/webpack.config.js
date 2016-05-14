@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   devtool: 'cheap-module-source-map',
-  entry: '/src/js/index.js',
+  entry: './src/js/index.js',
   output: {
     path: __dirname,
     filename: 'bundle.js',
