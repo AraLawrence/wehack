@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --inline"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.7.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }
