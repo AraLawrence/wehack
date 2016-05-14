@@ -1,16 +1,14 @@
-import React from 'react';
-import { render } from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
 
 const App = React.createClass({
   render() {
     return (
       <div>
-        "Hello, World!"
+        "Hello, Universe!"
       </div>
     )
   }
 });
 
-render((
-  <App />
-), document.getElementById('site'));
+ReactDOM.render(<App />, document.getElementById('app'));
