@@ -1,6 +1,6 @@
 class QuoteController < ApplicationController
   def new
-    quote = Quote.find(rand(1...36))
+    quote = Quote.offset(rand(Quote.count)).first
     render json: quote
   end
 
