@@ -19131,8 +19131,8 @@ var App = _react2.default.createClass({
   getGif: function getGif() {
     var _this = this;
 
-    $.get("http://localhost:3000/api/gif", function (data) {
-      _this.gifUrl = data.data.images.original.url;
+    $.get("/api/gif", function (data) {
+      _this.gifUrl = data.data.data.images.original.url;
       _this.setState({ quoteText: _this.quoteText, gifUrl: _this.gifUrl });
     });
   },

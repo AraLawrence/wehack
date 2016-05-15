@@ -12,8 +12,8 @@ const App = React.createClass({
     }
   },
   getGif() {
-    $.get("http://localhost:3000/api/gif", (data) => {
-      this.gifUrl = data.data.images.original.url;
+    $.get("/api/gif", (data) => {
+      this.gifUrl = data.data.data.images.original.url;
       this.setState({quoteText: this.quoteText, gifUrl: this.gifUrl});
     });
   },
