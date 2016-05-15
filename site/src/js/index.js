@@ -46,6 +46,9 @@ const App = React.createClass({
           <Quote data={this.state.quoteText}/>
           <div className="btn" onClick={this.handleClick}>Experience the Science</div>
         </div>
+        <div style={{textAlign: 'center', marginTop: '16px'}}>
+          <div className="fb-like" data-href="https://fakedomainfornow.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+        </div>
       </div>
     )
   }

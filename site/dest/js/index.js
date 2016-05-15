@@ -51099,6 +51099,9 @@ const App = React.createClass({displayName: "App",
         React.createElement("div", {className: "col s6 center"}, 
           React.createElement(Quote, {data: this.state.quoteText}), 
           React.createElement("div", {className: "btn", onClick: this.handleClick}, "Experience the Science")
+        ), 
+        React.createElement("div", {style: {textAlign: 'center', marginTop: '16px'}}, 
+          React.createElement("div", {className: "fb-like", "data-href": "https://fakedomainfornow.com", "data-width": "290", "data-layout": "standard", "data-action": "like", "data-show-faces": "false", "data-share": "true"})
         )
       )
     )
