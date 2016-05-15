@@ -13,7 +13,7 @@ commands.
 
 When finished installing the dependencies, run the following commands
 (after cd'ing into wehack directory) to get the app running locally:
-- mkvirtualenv neil
+- mkvirtualenv -p /usr/local/bin/python3.5 <usually this, otherwise check 'which python3'> neil
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python3 seed.py
