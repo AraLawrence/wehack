@@ -3,10 +3,4 @@ class QuoteController < ApplicationController
     quote = Quote.offset(rand(Quote.count)).first
     render json: quote
   end
-
-  def create
-  end
-
-  def destroy
-  end
 end

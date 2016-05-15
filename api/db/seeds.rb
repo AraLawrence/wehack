@@ -61,7 +61,7 @@ quotes = Quote.create([{quote: "Yes, the universe had a beginning. Yes, the univ
                       {quote: "You can neither cajole nor charm the laws of physics into agreeing with you if your ideas aren't based in objective realities"},
                       {quote: "Not that anybody asked, but the International Space Station travels four miles in 4/5 of a second."},
                       {quote: "Good education is not what fills your head with facts but what stimulates curiosity. You then learn for the rest of your life."},
-                      {quote: "Merry Christmas to all. A Pagan holiday (BC) becomes a Religious holidy (AD). Which then becomes a Shopping holiday (USA)."},
+                      {quote: "Merry Christmas to all. A Pagan holiday (BC) becomes a Religious holiday (AD). Which then becomes a Shopping holiday (USA)."},
                       {quote: "Whenever people have used religious documents to make accurate predictions about our base knowledge of the physical world, they have been famously wrong."},
                       {quote: "Science is a philosophy of discovery. Intelligent design is a philosophy of ignorance."},
                       {quote: "When your reasons for believing something are justified ad hoc, you are left susceptible to further discoveries undermining the rationale for that belief."},
