@@ -13,7 +13,7 @@ def create_quotes_table(engine):
     DeclarativeBase.metadata.create_all(engine)
 
 class Quotes(DeclarativeBase):
-    __tablename__ = "quote"
+    __tablename__ = "quotes"
 
     id = Column(Integer, primary_key=True)
     message = Column('quote', String)
