@@ -9,12 +9,12 @@ gulp.task('browserify', function() {
 	.transform('envify')
 	.bundle()
 	.pipe(source('index.js'))
-	.pipe(gulp.dest('./dest/js'));
+	.pipe(gulp.dest('./static/js'));
 });
 
 gulp.task('copy', function() {
 	gulp.src(['./src/**/*.*', '!./src/js/**/*.*'])
-	.pipe(gulp.dest('./public'));
+	.pipe(gulp.dest('./static'));
 });
 
 gulp.task('build', ['browserify', 'copy']);
