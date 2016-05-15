@@ -1,13 +1,12 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var MaterialUI = require('material-ui');
+import React from 'react';
+import render from 'react-dom';
 
-var Gif = require('./components/gif.js');
+import Gif from './components/gif.js';
 
 const App = React.createClass({
   getInitialState: function() {
     return {
-      quoteText: "hello",
+      quoteText: "Hello, Universe",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     }
   },
@@ -51,4 +50,4 @@ const App = React.createClass({
   }
 });
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
