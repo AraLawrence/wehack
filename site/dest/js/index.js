@@ -51023,12 +51023,27 @@ module.exports = warning;
 arguments[4][194][0].apply(exports,arguments)
 },{"./lib/React":253,"dup":194}],386:[function(require,module,exports){
 var React = require('react');
+var Quote = require('./quote.js');
 
 const Gif = React.createClass({displayName: "Gif",
+  getInitialState: function() {
+    return {
+      quoteText: this.props.quote
+    }
+  },
+
+  handleImageLoaded: function() {
+    this.setState({quoteText: this.props.quote})
+  },
+
   render() {
     return (
       React.createElement("div", null, 
-        React.createElement("img", {src: this.props.data})
+        React.createElement("img", {src: this.props.gif, 
+             onLoad: this.handleImageLoaded}), 
+        React.createElement("div", {className: "col s6 center"}, 
+          React.createElement(Quote, {data: this.state.quoteText})
+        )
       )
     )
   }
@@ -51036,7 +51051,7 @@ const Gif = React.createClass({displayName: "Gif",
 
 module.exports = Gif
 
-},{"react":385}],387:[function(require,module,exports){
+},{"./quote.js":387,"react":385}],387:[function(require,module,exports){
 var React = require('react');
 
 const Quote = React.createClass({displayName: "Quote",
@@ -51056,7 +51071,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var MaterialUI = require('material-ui');
 
-var Quote = require('./components/quote.js');
 var Gif = require('./components/gif.js');
 
 const App = React.createClass({displayName: "App",
@@ -51085,6 +51099,7 @@ const App = React.createClass({displayName: "App",
   },
 
   handleClick: function() {
+    console.log("handling click");
     this.getQuote();
 
   },
@@ -51094,10 +51109,7 @@ const App = React.createClass({displayName: "App",
     return (
       React.createElement("div", null, 
         React.createElement("div", {className: "col s6 center"}, 
-        React.createElement(Gif, {data: this.state.gifUrl})
-        ), 
-        React.createElement("div", {className: "col s6 center"}, 
-          React.createElement(Quote, {data: this.state.quoteText}), 
+          React.createElement(Gif, {gif: this.state.gifUrl, quote: this.state.quoteText}), 
           React.createElement("div", {className: "btn", onClick: this.handleClick}, "Experience the Science")
         ), 
         React.createElement("div", {style: {textAlign: 'center', marginTop: '16px'}}, 
@@ -51110,4 +51122,4 @@ const App = React.createClass({displayName: "App",
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
-},{"./components/gif.js":386,"./components/quote.js":387,"material-ui":133,"react":385,"react-dom":229}]},{},[388]);
+},{"./components/gif.js":386,"material-ui":133,"react":385,"react-dom":229}]},{},[388]);

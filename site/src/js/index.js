@@ -2,7 +2,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var MaterialUI = require('material-ui');
 
-var Quote = require('./components/quote.js');
 var Gif = require('./components/gif.js');
 
 const App = React.createClass({
@@ -31,6 +30,7 @@ const App = React.createClass({
   },
 
   handleClick: function() {
+    console.log("handling click");
     this.getQuote();
 
   },
@@ -40,10 +40,7 @@ const App = React.createClass({
     return (
       <div>
         <div className="col s6 center">
-        <Gif data={this.state.gifUrl}/>
-        </div>
-        <div className="col s6 center">
-          <Quote data={this.state.quoteText}/>
+          <Gif gif={this.state.gifUrl} quote={this.state.quoteText}/>
           <div className="btn" onClick={this.handleClick}>Experience the Science</div>
         </div>
         <div style={{textAlign: 'center', marginTop: '16px'}}>
