@@ -15,9 +15,7 @@ When finished installing the dependencies, run the following commands
 (after cd'ing into wehack directory):
 - mkvirtualenv neil
 - pip install -r requirements.txt
-(Enter your psql terminal)
-- CREATE DATABASE neil_base;
-(quit psql)
+- (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python3 seed.py
 - python3 app.py
 
