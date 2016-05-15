@@ -1,17 +1,15 @@
-var React = require('react');
-var Quote = require('./quote.js');
+import React from 'react';
+import Quote from './quote.js';
 
 const Gif = React.createClass({
-  getInitialState: function() {
+  getInitialState() {
     return {
       quoteText: this.props.quote
     }
   },
-
-  handleImageLoaded: function() {
+  handleImageLoaded() {
     this.setState({quoteText: this.props.quote})
   },
-
   render() {
     return (
       <div>
@@ -25,4 +23,4 @@ const Gif = React.createClass({
   }
 });
 
-module.exports = Gif
+module.exports = Gif;

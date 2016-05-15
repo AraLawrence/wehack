@@ -2,7 +2,6 @@
 
 import gulp from 'gulp';
 import browserify from 'browserify'
-import reactivy from 'reactify';
 import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 

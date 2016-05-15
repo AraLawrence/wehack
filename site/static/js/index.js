@@ -19040,32 +19040,36 @@ module.exports = require('./lib/React');
 },{"./lib/React":26}],159:[function(require,module,exports){
 'use strict';
 
-var React = require('react');
-var Quote = require('./quote.js');
+var _react = require('react');
 
-var Gif = React.createClass({
+var _react2 = _interopRequireDefault(_react);
+
+var _quote = require('./quote.js');
+
+var _quote2 = _interopRequireDefault(_quote);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Gif = _react2.default.createClass({
   displayName: 'Gif',
-
   getInitialState: function getInitialState() {
     return {
       quoteText: this.props.quote
     };
   },
-
   handleImageLoaded: function handleImageLoaded() {
     this.setState({ quoteText: this.props.quote });
   },
-
   render: function render() {
-    return React.createElement(
+    return _react2.default.createElement(
       'div',
       null,
-      React.createElement('img', { src: this.props.gif,
+      _react2.default.createElement('img', { src: this.props.gif,
         onLoad: this.handleImageLoaded }),
-      React.createElement(
+      _react2.default.createElement(
         'div',
         { className: 'col s6 center' },
-        React.createElement(Quote, { data: this.state.quoteText })
+        _react2.default.createElement(_quote2.default, { data: this.state.quoteText })
       )
     );
   }
@@ -19076,15 +19080,19 @@ module.exports = Gif;
 },{"./quote.js":160,"react":158}],160:[function(require,module,exports){
 'use strict';
 
-var React = require('react');
+var _react = require('react');
 
-var Quote = React.createClass({
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Quote = _react2.default.createClass({
   displayName: 'Quote',
   render: function render() {
-    return React.createElement(
+    return _react2.default.createElement(
       'div',
       null,
-      React.createElement(
+      _react2.default.createElement(
         'p',
         null,
         this.props.data
@@ -19104,8 +19112,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
 
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
 var _gif = require('./components/gif.js');
 
 var _gif2 = _interopRequireDefault(_gif);
@@ -19114,38 +19120,34 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var App = _react2.default.createClass({
   displayName: 'App',
-
   getInitialState: function getInitialState() {
+    var quoteText = void 0,
+        gifUrl = void 0;
     return {
       quoteText: "Hello, Universe",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     };
   },
-
   getGif: function getGif() {
-    var self = this;
-    console.log("second api call");
+    var _this = this;
+
     $.get("http://localhost:3000/api/gif", function (data) {
-      gifUrl = data.data.images.original.url;
-      self.setState({ quoteText: quoteText, gifUrl: gifUrl });
+      _this.gifUrl = data.data.images.original.url;
+      _this.setState({ quoteText: _this.quoteText, gifUrl: _this.gifUrl });
     });
   },
-
   getQuote: function getQuote() {
-    var self = this;
+    var _this2 = this;
+
     $.get("http://localhost:3000/api/quote", function (data) {
-      quoteText = data.quote;
-      self.getGif();
+      _this2.quoteText = data.quote;
+      _this2.getGif();
     });
   },
-
   handleClick: function handleClick() {
-    console.log("handling click");
     this.getQuote();
   },
-
   render: function render() {
-    var quoteText, gifUrl;
     return _react2.default.createElement(
       'div',
       null,
@@ -19168,6 +19170,6 @@ var App = _react2.default.createClass({
   }
 });
 
-(0, _reactDom2.default)(_react2.default.createElement(App, null), document.getElementById('app'));
+(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 },{"./components/gif.js":159,"react":158,"react-dom":2}]},{},[161]);

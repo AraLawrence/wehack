@@ -1,41 +1,32 @@
 import React from 'react';
-import render from 'react-dom';
+import { render } from 'react-dom';
 
 import Gif from './components/gif.js';
 
 const App = React.createClass({
-  getInitialState: function() {
+  getInitialState() {
+    let quoteText, gifUrl;
     return {
       quoteText: "Hello, Universe",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     }
   },
-
-  getGif: function() {
-    var self = this;
-    console.log("second api call");
-    $.get("http://localhost:3000/api/gif", function(data) {
-      gifUrl = data.data.images.original.url;
-      self.setState({quoteText: quoteText, gifUrl: gifUrl});
+  getGif() {
+    $.get("http://localhost:3000/api/gif", (data) => {
+      this.gifUrl = data.data.images.original.url;
+      this.setState({quoteText: this.quoteText, gifUrl: this.gifUrl});
     });
   },
-
-  getQuote: function() {
-    var self = this;
-    $.get("http://localhost:3000/api/quote", function(data) {
-      quoteText = data.quote;
-      self.getGif();
+  getQuote() {
+    $.get("http://localhost:3000/api/quote", (data) => {
+      this.quoteText = data.quote;
+      this.getGif();
     });
   },
-
-  handleClick: function() {
-    console.log("handling click");
+  handleClick() {
     this.getQuote();
-
   },
-
   render() {
-  	var quoteText, gifUrl;
     return (
       <div>
         <div className="col s6 center">
