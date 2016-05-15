@@ -19139,7 +19139,7 @@ var App = _react2.default.createClass({
   getQuote: function getQuote() {
     var _this2 = this;
 
-    $.get("http://localhost:3000/api/quote", function (data) {
+    $.get("/api/quote", function (data) {
       _this2.quoteText = data.quote;
       _this2.getGif();
     });

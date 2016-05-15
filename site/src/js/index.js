@@ -18,7 +18,7 @@ const App = React.createClass({
     });
   },
   getQuote() {
-    $.get("http://localhost:3000/api/quote", (data) => {
+    $.get("/api/quote", (data) => {
       this.quoteText = data.quote;
       this.getGif();
     });
