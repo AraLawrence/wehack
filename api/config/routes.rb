@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'gifs/new'
+  get 'api/gif' => 'gifs#new'
 
   get 'images/new'
 
