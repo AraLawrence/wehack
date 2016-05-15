@@ -51023,21 +51023,83 @@ module.exports = warning;
 arguments[4][194][0].apply(exports,arguments)
 },{"./lib/React":253,"dup":194}],386:[function(require,module,exports){
 var React = require('react');
+
+const Gif = React.createClass({displayName: "Gif",
+  render() {
+    return (
+      React.createElement("div", null, 
+        React.createElement("img", {src: this.props.data})
+      )
+    )
+  }
+});
+
+module.exports = Gif
+
+},{"react":385}],387:[function(require,module,exports){
+var React = require('react');
+
+const Quote = React.createClass({displayName: "Quote",
+  render() {
+    return (
+      React.createElement("div", null, 
+        React.createElement("p", null, this.props.data)
+      )
+    )
+  }
+});
+
+module.exports = Quote
+
+},{"react":385}],388:[function(require,module,exports){
+var React = require('react');
 var ReactDOM = require('react-dom');
 var MaterialUI = require('material-ui');
 
+var Quote = require('./components/quote.js');
+var Gif = require('./components/gif.js');
+
 const App = React.createClass({displayName: "App",
+  getInitialState: function() {
+    return {
+      quoteText: "hello",
+      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
+    }
+  },
+
+  getGif: function() {
+    var self = this;
+    console.log("second api call");
+    $.get("http://localhost:3000/api/gif", function(data) {
+      gifUrl = data.data.images.original.url;
+      self.setState({quoteText: quoteText, gifUrl: gifUrl});
+    });
+  },
+
+  getQuote: function() {
+    var self = this;
+    $.get("http://localhost:3000/api/quote", function(data) {
+      quoteText = data.quote;
+      self.getGif();
+    });
+  },
+
+  handleClick: function() {
+    this.getQuote();
+
+  },
+
   render() {
-  	var style = {}
+  	var quoteText, gifUrl;
     return (
       React.createElement("div", null, 
-
-      React.createElement("div", {className: "col s6 center"}, 
-      React.createElement("img", {src: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"})
-      ), 
-      React.createElement("div", {className: "col s6 center"}, 
-        "\"Hello, Universe!\""
-      )
+        React.createElement("div", {className: "col s6 center"}, 
+        React.createElement(Gif, {data: this.state.gifUrl})
+        ), 
+        React.createElement("div", {className: "col s6 center"}, 
+          React.createElement(Quote, {data: this.state.quoteText}), 
+          React.createElement("div", {className: "btn", onClick: this.handleClick}, "Experience the Science")
+        )
       )
     )
   }
@@ -51045,4 +51107,4 @@ const App = React.createClass({displayName: "App",
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
-},{"material-ui":133,"react":385,"react-dom":229}]},{},[386]);
+},{"./components/gif.js":386,"./components/quote.js":387,"material-ui":133,"react":385,"react-dom":229}]},{},[388]);
