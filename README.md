@@ -6,10 +6,8 @@ Install the following dependencies:
 - virtualenv
 - virtualenvwrapper
 
-pip is used to install python packages, which are contained in a shared library.
-Because these are contained in a shared library it is good to store projects in
-seperate virtualenvs. virtualenvwrapper is not necessary, but adds many helpful
-commands.
+pip is used to install python packages. Python uses a shared library, so it is good to store projects in
+seperate virtualenvs. virtualenvwrapper is not necessary, but adds many helpful commands.
 
 When finished installing the dependencies, run the following commands
 (after cd'ing into wehack directory) to get the app running locally:
