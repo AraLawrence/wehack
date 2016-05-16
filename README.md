@@ -11,7 +11,7 @@ seperate virtualenvs. virtualenvwrapper is not necessary, but adds many helpful 
 
 When finished installing the dependencies, run the following commands
 (after cd'ing into wehack directory) to get the app running locally:
-- mkvirtualenv -p /usr/local/bin/python3.5 [usually this, otherwise check 'which python3'] neil
+- mkvirtualenv -p /usr/local/bin/python3.5 neil (if this fails check 'which python3' and sub that for /usr/...)
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python3 seed.py
