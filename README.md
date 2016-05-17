@@ -10,10 +10,10 @@ pip is used to install python packages. Python uses a shared library, so it is g
 seperate virtualenvs. virtualenvwrapper is not necessary, but adds many helpful commands.
 
 When finished installing the dependencies, run the following commands
-(after cd'ing into wehack directory) to get the app running locally:
-- mkvirtualenv -p /usr/local/bin/python3.5 neil 
+(after cd'ing into wehack/app directory) to get the app running locally:
+- mkvirtualenv -p /usr/local/bin/python3.5 neil
   - if this fails check 'which python3' and sub that for /usr/...
-  - When you work on the project in the future you will want to use the command 'workon neil' which will add (neil) at the front of your terminal line
+  - When you work on the project in the future you will want to use the command 'workon neil' which will allow you to work in the env 'neil' and will add (neil) at the front of your terminal line
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python3 seed.py
@@ -21,9 +21,10 @@ When finished installing the dependencies, run the following commands
 
 The final command here will set the app up running on localhost:5000
 
-To develop on the frontend you will have to run the following commands:
+To develop on the frontend you will have to run the following commands (from wehack dir):
 - npm install
 - gulp
 
 Gulp is setup here to work with Babel to transpile both JSX and es2015, so all
-es6 features can be used on the frontend.
+es6 features can be used on the frontend. When transpiling gulps works from the src folder, and transpiles
+into app/static
