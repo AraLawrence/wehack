@@ -10,19 +10,21 @@ const App = React.createClass({
   getInitialState() {
     let quoteText, gifUrl;
     return {
-      quoteText: "Hello, Universe",
+      quoteText: "Hello, Universe!",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     }
   },
   getGif() {
-    $.get("/api/gif", (data) => {
-      this.gifUrl = data.data.data.images.original.url;
+    fetch('/api/gif').then((res) => res.json())
+    .then((resText) => {
+      this.gifUrl = resText.data.data.images.original.url;
       this.setState({quoteText: this.quoteText, gifUrl: this.gifUrl});
     });
   },
   getQuote() {
-    $.get("/api/quote", (data) => {
-      this.quoteText = data.quote;
+    fetch('/api/quote').then((res) => res.json())
+    .then((resText) => {
+      this.quoteText = resText.quote;
       this.getGif();
     });
   },
@@ -31,17 +33,19 @@ const App = React.createClass({
   },
   render() {
     return (
-      <div>
-        <div className="col s6 center">
-          <Gif gif={this.state.gifUrl} quote={this.state.quoteText}/>
-          <MuiThemeProvider muiTheme={getMuiTheme()}>
-            <RaisedButton onClick={this.handleClick} backgroundColor="#a4c639" label="Experience the Science" />
-          </MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme()}>
+        <div style={{fontFamily:'roboto'}}>
+          <div style={{textAlign: 'center'}}>
+            <Gif gif={this.state.gifUrl} quote={this.state.quoteText}/>
+            <RaisedButton onClick={this.handleClick}
+                          labelColor="white" backgroundColor="#4db6ac"
+                          label="Experience the Science" />
+          </div>
+          <div style={{textAlign: 'center', marginTop: '16px'}}>
+            <div className="fb-like" data-href="https://fakedomainfornow.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+          </div>
         </div>
-        <div style={{textAlign: 'center', marginTop: '16px'}}>
-          <div className="fb-like" data-href="https://fakedomainfornow.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-        </div>
-      </div>
+      </MuiThemeProvider>
     )
   }
 });
