@@ -11,12 +11,12 @@ gulp.task('browserify', () => {
 	.transform('envify')
 	.bundle()
 	.pipe(source('index.js'))
-	.pipe(gulp.dest('./static/js'));
+	.pipe(gulp.dest('./app/static/js'));
 });
 
 gulp.task('copy', () => {
 	gulp.src(['./src/**/*.*', '!./src/js/**/*.*'])
-	.pipe(gulp.dest('./static'));
+	.pipe(gulp.dest('./app/static'));
 });
 
 gulp.task('build', ['browserify', 'copy']);
