@@ -9,11 +9,12 @@ Install the following dependencies:
 pip is used to install python packages. Python uses a shared library, so it is good to store projects in
 seperate virtualenvs. virtualenvwrapper is not necessary, but adds many helpful commands.
 
-When finished installing the dependencies, run the following commands
-(after cd'ing into wehack/app directory) to get the app running locally:
-- mkvirtualenv -p /usr/local/bin/python3.5 neil
-  - if this fails check 'which python3' and sub that for /usr/...
-  - When you work on the project in the future you will want to use the command 'workon neil' which will allow you to work in the env 'neil' and will add (neil) at the front of your terminal line
+When finished installing the dependencies, run the following commands:
+- mkvirtualenv neil
+  - When you work on the project in the future you will want to use the command 'workon neil' which will allow you to work in the env 'neil' and will add (neil) at the front of your terminal line. To deactivate
+  the env, use the command 'deactivate'
+
+Then cd into the wehack/app directory and run the following commands to get the app running locally:
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python seed.py
