@@ -18,7 +18,7 @@ Then cd into the wehack/app directory and run the following commands to get the 
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
 - python seed.py
-- python __init__.py
+- python \__init__.py
 
 The final command here will set the app up running on localhost:5000
 
