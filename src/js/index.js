@@ -12,7 +12,7 @@ const App = React.createClass({
   getInitialState() {
     let quoteText, gifUrl;
     return {
-      quoteText: "Hello, Universe!",
+      quoteText: "Hello Universe!",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif",
       loading: "hidden"
     }
@@ -44,9 +44,11 @@ const App = React.createClass({
     return (
       <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div style={styles}>
-          <Card style={{width:"70%", margin:"auto", marginTop:"5%"}}>
+          <Card style={{width:"80%", margin:"auto", marginTop:"5%"}}>
             <CardHeader
               avatar="../static/assets/neil-circle.png"
+              title="Neil deGrasse Tyson"
+              subtitle="Words of Wisdom"
               />
             <div style={{textAlign: 'center'}}>
               <Gif gif={this.state.gifUrl} quote={this.state.quoteText}/>

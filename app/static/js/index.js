@@ -33514,7 +33514,7 @@ var App = _react2.default.createClass({
     var quoteText = void 0,
         gifUrl = void 0;
     return {
-      quoteText: "Hello, Universe!",
+      quoteText: "Hello Universe!",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif",
       loading: "hidden"
     };
@@ -33557,9 +33557,11 @@ var App = _react2.default.createClass({
         { style: styles },
         _react2.default.createElement(
           _Card.Card,
-          { style: { width: "70%", margin: "auto", marginTop: "5%" } },
+          { style: { width: "80%", margin: "auto", marginTop: "5%" } },
           _react2.default.createElement(_Card.CardHeader, {
-            avatar: '../static/assets/neil-circle.png'
+            avatar: '../static/assets/neil-circle.png',
+            title: 'Neil deGrasse Tyson',
+            subtitle: 'Words of Wisdom'
           }),
           _react2.default.createElement(
             'div',

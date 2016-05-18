@@ -1,0 +1,241 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-favicon',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /Users/hayleenighbert/Development/wehack/package.json
+5 warn package.json site@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-core/package.json
+7 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-preset-es2015/package.json
+8 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-preset-react/package.json
+9 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-register/package.json
+10 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/babelify/package.json
+11 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/browserify/package.json
+12 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/envify/package.json
+13 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/gulp/package.json
+14 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/gulp-babel/package.json
+15 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/material-ui/package.json
+16 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/react/package.json
+17 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/react-dom/package.json
+18 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/react-tap-event-plugin/package.json
+19 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/uglify/package.json
+20 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/vinyl-source-stream/package.json
+21 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/node_modules/watchify/package.json
+22 info package.json react-tap-event-plugin@1.0.0 No license field.
+23 info package.json uglify@0.1.5 No license field.
+24 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/package.json
+25 silly cache add args [ 'react-favicon', null ]
+26 verbose cache add spec react-favicon
+27 silly cache add parsed spec Result {
+27 silly cache add   raw: 'react-favicon',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'react-favicon',
+27 silly cache add   rawSpec: '',
+27 silly cache add   spec: 'latest',
+27 silly cache add   type: 'tag' }
+28 silly addNamed react-favicon@latest
+29 verbose addNamed "latest" is being treated as a dist-tag for react-favicon
+30 info addNameTag [ 'react-favicon', 'latest' ]
+31 silly mapToRegistry name react-favicon
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry data Result {
+34 silly mapToRegistry   raw: 'react-favicon',
+34 silly mapToRegistry   scope: null,
+34 silly mapToRegistry   name: 'react-favicon',
+34 silly mapToRegistry   rawSpec: '',
+34 silly mapToRegistry   spec: 'latest',
+34 silly mapToRegistry   type: 'tag' }
+35 silly mapToRegistry uri https://registry.npmjs.org/react-favicon
+36 verbose addNameTag registry:https://registry.npmjs.org/react-favicon not in flight; fetching
+37 verbose request uri https://registry.npmjs.org/react-favicon
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 2:45:13 PM
+40 verbose request id 05d1a6aaf9982fa1
+41 http request GET https://registry.npmjs.org/react-favicon
+42 http 200 https://registry.npmjs.org/react-favicon
+43 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 verbose headers   etag: '"2H5T6RKDNYM6CSZROUMLFI5P4"',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'content-encoding': 'gzip',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'content-length': '1565',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Wed, 18 May 2016 21:45:13 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   age: '0',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1463607913.604190,VS0,VE45',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 silly get cb [ 200,
+44 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+44 silly get     etag: '"2H5T6RKDNYM6CSZROUMLFI5P4"',
+44 silly get     'content-type': 'application/json',
+44 silly get     'content-encoding': 'gzip',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     'content-length': '1565',
+44 silly get     'accept-ranges': 'bytes',
+44 silly get     date: 'Wed, 18 May 2016 21:45:13 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     age: '0',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-lax1440-LAX',
+44 silly get     'x-cache': 'MISS',
+44 silly get     'x-cache-hits': '0',
+44 silly get     'x-timer': 'S1463607913.604190,VS0,VE45',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose get saving react-favicon to /Users/hayleenighbert/.npm/registry.npmjs.org/react-favicon/.cache.json
+46 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+47 silly addNameTag next cb for react-favicon with tag latest
+48 silly addNamed react-favicon@0.0.4
+49 verbose addNamed "0.0.4" is a plain semver version for react-favicon
+50 silly mapToRegistry name react-favicon
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'react-favicon',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   name: 'react-favicon',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri https://registry.npmjs.org/react-favicon
+55 verbose addRemoteTarball https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz',
+56 verbose addRemoteTarball   '3367406a1b0d632b690b5d1ce48e9b086970ebc5' ]
+57 info retry fetch attempt 1 at 2:45:13 PM
+58 info attempt registry request try #1 at 2:45:13 PM
+59 http fetch GET https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz
+60 http fetch 200 https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz
+61 silly fetchAndShaCheck shasum 3367406a1b0d632b690b5d1ce48e9b086970ebc5
+62 verbose addTmpTarball /var/folders/45/m5rrtntx35vblcj6rdjx5nqw0000gn/T/npm-11028-edf8517a/registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for react-favicon@0.0.4
+64 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+65 silly cache afterAdd react-favicon@0.0.4
+66 verbose afterAdd /Users/hayleenighbert/.npm/react-favicon/0.0.4/package/package.json not in flight; writing
+67 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+68 verbose afterAdd /Users/hayleenighbert/.npm/react-favicon/0.0.4/package/package.json written
+69 silly install resolved [ { name: 'react-favicon',
+69 silly install resolved     version: '0.0.4',
+69 silly install resolved     description: 'Favicon for react',
+69 silly install resolved     main: 'dist/react-favicon.js',
+69 silly install resolved     scripts: { build: 'babel lib/react-favicon.js > dist/react-favicon.js' },
+69 silly install resolved     repository:
+69 silly install resolved      { type: 'git',
+69 silly install resolved        url: 'git+https://github.com/cezary/react-favicon.git' },
+69 silly install resolved     keywords: [ 'react', 'favicon' ],
+69 silly install resolved     author: { name: 'Cezary Wojtkowski', email: 'cezary@gmail.com' },
+69 silly install resolved     license: 'MIT',
+69 silly install resolved     bugs: { url: 'https://github.com/cezary/react-favicon/issues' },
+69 silly install resolved     homepage: 'https://github.com/cezary/react-favicon',
+69 silly install resolved     peerDependencies: { react: '>=0.12.0 < 15.0.x' },
+69 silly install resolved     devDependencies: { babel: '^5.1.10' },
+69 silly install resolved     gitHead: 'ebe953b33c99dffe1a20a30c285d3a1563a1b627',
+69 silly install resolved     _id: 'react-favicon@0.0.4',
+69 silly install resolved     _shasum: '3367406a1b0d632b690b5d1ce48e9b086970ebc5',
+69 silly install resolved     _from: 'react-favicon@latest',
+69 silly install resolved     _npmVersion: '3.7.2',
+69 silly install resolved     _nodeVersion: '5.7.0',
+69 silly install resolved     _npmUser: { name: 'cezary', email: 'cezary@gmail.com' },
+69 silly install resolved     maintainers: [ [Object] ],
+69 silly install resolved     dist:
+69 silly install resolved      { shasum: '3367406a1b0d632b690b5d1ce48e9b086970ebc5',
+69 silly install resolved        tarball: 'https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz' },
+69 silly install resolved     _npmOperationalInternal:
+69 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+69 silly install resolved        tmp: 'tmp/react-favicon-0.0.4.tgz_1460660531840_0.6053771807346493' },
+69 silly install resolved     directories: {},
+69 silly install resolved     _resolved: 'https://registry.npmjs.org/react-favicon/-/react-favicon-0.0.4.tgz' } ]
+70 info install react-favicon@0.0.4 into /Users/hayleenighbert/Development/wehack
+71 info installOne react-favicon@0.0.4
+72 verbose installOne of react-favicon to /Users/hayleenighbert/Development/wehack not in flight; installing
+73 verbose correctMkdir /Users/hayleenighbert/.npm/_locks correctMkdir not in flight; initializing
+74 verbose lock using /Users/hayleenighbert/.npm/_locks/react-favicon-e3fc1a4da0d05b4d.lock for /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+75 silly install write writing react-favicon 0.0.4 to /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+76 verbose unbuild node_modules/react-favicon
+77 silly gentlyRm /Users/hayleenighbert/Development/wehack/node_modules/react-favicon is being purged from base /Users/hayleenighbert/Development/wehack
+78 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+79 verbose tar unpack /Users/hayleenighbert/.npm/react-favicon/0.0.4/package.tgz
+80 verbose tar unpacking to /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+81 silly gentlyRm /Users/hayleenighbert/Development/wehack/node_modules/react-favicon is being purged
+82 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+83 silly gunzTarPerm modes [ '755', '644' ]
+84 silly gunzTarPerm extractEntry package.json
+85 silly gunzTarPerm extractEntry README.md
+86 silly gunzTarPerm extractEntry dist/react-favicon.js
+87 silly gunzTarPerm extractEntry index.html
+88 silly gunzTarPerm extractEntry lib/react-favicon.js
+89 verbose write writing to /Users/hayleenighbert/Development/wehack/node_modules/react-favicon/package.json
+90 info preinstall react-favicon@0.0.4
+91 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/node_modules/react-favicon/package.json
+92 silly prepareForInstallMany adding react@>=0.12.0 < 15.0.x from react-favicon peerDependencies
+93 warn peerDependencies The peer dependency react@>=0.12.0 < 15.0.x included from react-favicon will no
+94 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+95 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+96 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/node_modules/react-favicon/package.json
+97 silly install resolved []
+98 verbose about to build /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+99 info build /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+100 info linkStuff react-favicon@0.0.4
+101 silly linkStuff react-favicon@0.0.4 has /Users/hayleenighbert/Development/wehack/node_modules as its parent node_modules
+102 verbose linkBins react-favicon@0.0.4
+103 verbose linkMans react-favicon@0.0.4
+104 verbose rebuildBundles react-favicon@0.0.4
+105 info install react-favicon@0.0.4
+106 info postinstall react-favicon@0.0.4
+107 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/package.json
+108 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-core/package.json
+109 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-preset-es2015/package.json
+110 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-preset-react/package.json
+111 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/babel-register/package.json
+112 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/babelify/package.json
+113 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/browserify/package.json
+114 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/envify/package.json
+115 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/gulp/package.json
+116 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/gulp-babel/package.json
+117 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/material-ui/package.json
+118 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/react/package.json
+119 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/react-dom/package.json
+120 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/react-favicon/package.json
+121 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/react-tap-event-plugin/package.json
+122 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/uglify/package.json
+123 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/vinyl-source-stream/package.json
+124 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/watchify/package.json
+125 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/.bin/browserify/package.json
+126 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/.bin/envify/package.json
+127 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/.bin/gulp/package.json
+128 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/.bin/uglify/package.json
+129 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/node_modules/.bin/watchify/package.json
+130 verbose already installed skipping react@>=0.12.0 < 15.0.x /Users/hayleenighbert/Development/wehack
+131 silly install resolved []
+132 verbose unlock done using /Users/hayleenighbert/.npm/_locks/react-favicon-e3fc1a4da0d05b4d.lock for /Users/hayleenighbert/Development/wehack/node_modules/react-favicon
+133 verbose validateInstall loading /Users/hayleenighbert/Development/wehack/package.json for validation
+134 verbose stack Error: The package react@15.0.2 does not satisfy its siblings' peerDependencies requirements!
+134 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+134 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+134 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+134 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+134 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+134 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+134 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+134 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+134 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+134 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+135 verbose cwd /Users/hayleenighbert/Development/wehack
+136 error Darwin 15.4.0
+137 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-favicon" "--save"
+138 error node v4.4.3
+139 error npm  v2.15.1
+140 error code EPEERINVALID
+141 error peerinvalid The package react@15.0.2 does not satisfy its siblings' peerDependencies requirements!
+141 error peerinvalid Peer react-dom@15.0.2 wants react@^15.0.2
+141 error peerinvalid Peer react-favicon@0.0.4 wants react@>=0.12.0 < 15.0.x
+141 error peerinvalid Peer material-ui@0.15.0 wants react@^15.0.0
+141 error peerinvalid Peer react-tap-event-plugin@1.0.0 wants react@^15.0.0-0
+142 verbose exit [ 1, true ]
