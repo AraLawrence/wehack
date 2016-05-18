@@ -33437,7 +33437,7 @@ var Gif = _react2.default.createClass({
         null,
         _react2.default.createElement(
           'div',
-          { className: 'col s6 center' },
+          null,
           _react2.default.createElement(_quote2.default, { data: this.state.quoteText })
         )
       )
@@ -33459,15 +33459,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Quote = _react2.default.createClass({
   displayName: "Quote",
   render: function render() {
-    var quoteStyle = {
-      fontSize: "20px"
-    };
     return _react2.default.createElement(
       "div",
       null,
       _react2.default.createElement(
         "p",
-        { style: quoteStyle },
+        { className: "quote-text" },
         "\"",
         this.props.data,
         "\""

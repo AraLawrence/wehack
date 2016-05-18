@@ -19,7 +19,7 @@ const Gif = React.createClass({
              onLoad={this.handleImageLoaded}/>
         </CardMedia>
         <CardText>
-        <div className="col s6 center">
+        <div>
           <Quote data={this.state.quoteText}/>
         </div>
         </CardText>
