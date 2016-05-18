@@ -1,7 +1,7 @@
 # Setup:
 
 Install the following dependencies:
-- Python 3.5
+- Python 2.6+
 - pip
 - virtualenv
 - virtualenvwrapper
