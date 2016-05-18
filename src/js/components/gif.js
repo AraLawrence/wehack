@@ -14,7 +14,7 @@ const Gif = React.createClass({
   render() {
     return (
       <div>
-        <CardMedia>
+        <CardMedia style={{width:"75%", height:"auto", margin:"0 auto"}}>
           <img src={this.props.gif}
              onLoad={this.handleImageLoaded}/>
         </CardMedia>
