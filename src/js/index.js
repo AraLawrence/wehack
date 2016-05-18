@@ -44,7 +44,7 @@ const App = React.createClass({
     return (
       <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div style={styles}>
-          <Card style={{width:"70%", margin:"auto"}}>
+          <Card style={{width:"70%", margin:"auto", marginTop:"5%"}}>
             <CardHeader
               avatar="../static/assets/neil-circle.png"
               />
@@ -61,9 +61,12 @@ const App = React.createClass({
             </div>
           </Card>
 
-          <div style={{textAlign: 'center', margin: '5%'}}>
-            <div className="fb-like" data-href="https://fakedomainfornow.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-          </div>
+            <div style={{textAlign: 'center', margin: '5%', paddingTop:"12px", paddingBottom:"6px"}}>
+              <div className="fb-like" data-href="https://experiencethescience.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+              <div><a href="https://github.com/AraLawrence/wehack" target="_blank"><img style={{width:"50px", height:"auto", paddingTop:"15px"}}
+                      src="../static/assets/github-logo.png"></img></a></div>
+            </div>
+
         </div>
       </MuiThemeProvider>
     )

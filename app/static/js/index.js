@@ -33560,7 +33560,7 @@ var App = _react2.default.createClass({
         { style: styles },
         _react2.default.createElement(
           _Card.Card,
-          { style: { width: "70%", margin: "auto" } },
+          { style: { width: "70%", margin: "auto", marginTop: "5%" } },
           _react2.default.createElement(_Card.CardHeader, {
             avatar: '../static/assets/neil-circle.png'
           }),
@@ -33584,8 +33584,18 @@ var App = _react2.default.createClass({
         ),
         _react2.default.createElement(
           'div',
-          { style: { textAlign: 'center', margin: '5%' } },
-          _react2.default.createElement('div', { className: 'fb-like', 'data-href': 'https://fakedomainfornow.com', 'data-width': '290', 'data-layout': 'standard', 'data-action': 'like', 'data-show-faces': 'false', 'data-share': 'true' })
+          { style: { textAlign: 'center', margin: '5%', paddingTop: "12px", paddingBottom: "6px" } },
+          _react2.default.createElement('div', { className: 'fb-like', 'data-href': 'https://experiencethescience.com', 'data-width': '290', 'data-layout': 'standard', 'data-action': 'like', 'data-show-faces': 'false', 'data-share': 'true' }),
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'https://github.com/AraLawrence/wehack', target: '_blank' },
+              _react2.default.createElement('img', { style: { width: "50px", height: "auto", paddingTop: "15px" },
+                src: '../static/assets/github-logo.png' })
+            )
+          )
         )
       )
     );
