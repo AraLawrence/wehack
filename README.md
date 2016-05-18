@@ -16,8 +16,8 @@ When finished installing the dependencies, run the following commands
   - When you work on the project in the future you will want to use the command 'workon neil' which will allow you to work in the env 'neil' and will add (neil) at the front of your terminal line
 - pip install -r requirements.txt
 - (Enter your psql terminal) CREATE DATABASE neil_base (quit psql);
-- python3 seed.py
-- python3 app.py
+- python seed.py
+- python __init__.py
 
 The final command here will set the app up running on localhost:5000
 

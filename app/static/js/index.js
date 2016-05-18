@@ -30864,7 +30864,7 @@ var App = _react2.default.createClass({
     var quoteText = void 0,
         gifUrl = void 0;
     return {
-      quoteText: "Hello, Universe!",
+      quoteText: "Hello, World!",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     };
   },
