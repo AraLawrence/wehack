@@ -10,7 +10,7 @@ const App = React.createClass({
   getInitialState() {
     let quoteText, gifUrl;
     return {
-      quoteText: "Hello, World!",
+      quoteText: "Hello, Universe!",
       gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
     }
   },
