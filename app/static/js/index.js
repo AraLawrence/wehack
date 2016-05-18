@@ -33584,7 +33584,7 @@ var App = _react2.default.createClass({
         _react2.default.createElement(
           'div',
           { style: { textAlign: 'center', margin: '5%', paddingTop: "12px", paddingBottom: "6px" } },
-          _react2.default.createElement('div', { className: 'fb-like', 'data-href': 'https://experiencethescience.com', 'data-width': '290', 'data-layout': 'standard', 'data-action': 'like', 'data-show-faces': 'false', 'data-share': 'true' }),
+          _react2.default.createElement('div', { 'class': 'fb-like', 'data-href': 'http://experiencethescience.com/', 'data-width': '290', 'data-layout': 'standard', 'data-action': 'like', 'data-show-faces': 'false', 'data-share': 'true' }),
           _react2.default.createElement(
             'div',
             null,

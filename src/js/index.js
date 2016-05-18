@@ -63,7 +63,7 @@ const App = React.createClass({
             </div>
           </Card>
           <div style={{textAlign: 'center', margin: '5%', paddingTop:"12px", paddingBottom:"6px"}}>
-            <div className="fb-like" data-href="https://experiencethescience.com" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+            <div class="fb-like" data-href="http://experiencethescience.com/" data-width="290" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
             <div><a href="https://github.com/AraLawrence/wehack" target="_blank"><img style={{width:"50px", height:"auto", paddingTop:"15px"}}
                     src="../static/assets/github-logo.png"></img></a></div>
           </div>
