@@ -33518,7 +33518,8 @@ var App = _react2.default.createClass({
         gifUrl = void 0;
     return {
       quoteText: "Hello, Universe!",
-      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
+      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif",
+      loading: "hidden"
     };
   },
   getGif: function getGif() {
@@ -33528,7 +33529,7 @@ var App = _react2.default.createClass({
       return res.json();
     }).then(function (resText) {
       _this.gifUrl = resText.data.data.images.original.url;
-      _this.setState({ quoteText: _this.quoteText, gifUrl: _this.gifUrl });
+      _this.setState({ quoteText: _this.quoteText, gifUrl: _this.gifUrl, loading: "hidden" });
     });
   },
   getQuote: function getQuote() {
@@ -33542,6 +33543,7 @@ var App = _react2.default.createClass({
     });
   },
   handleClick: function handleClick() {
+    this.setState({ loading: 'visible' });
     this.getQuote();
   },
   render: function render() {
@@ -33572,7 +33574,11 @@ var App = _react2.default.createClass({
               _react2.default.createElement(_RaisedButton2.default, { onClick: this.handleClick,
                 labelColor: 'white', backgroundColor: '#4db6ac',
                 label: 'Experience the Science', style: { marginBottom: "5%" } }),
-              _react2.default.createElement(_LinearProgress2.default, { mode: 'indeterminate' })
+              _react2.default.createElement(
+                'div',
+                { style: { visibility: this.state.loading } },
+                _react2.default.createElement(_LinearProgress2.default, { mode: 'indeterminate' })
+              )
             )
           )
         ),

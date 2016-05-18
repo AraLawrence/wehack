@@ -13,14 +13,15 @@ const App = React.createClass({
     let quoteText, gifUrl;
     return {
       quoteText: "Hello, Universe!",
-      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
+      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif",
+      loading: "hidden"
     }
   },
   getGif() {
     fetch('/api/gif').then((res) => res.json())
     .then((resText) => {
       this.gifUrl = resText.data.data.images.original.url;
-      this.setState({quoteText: this.quoteText, gifUrl: this.gifUrl});
+      this.setState({quoteText: this.quoteText, gifUrl: this.gifUrl, loading: "hidden"});
     });
   },
   getQuote() {
@@ -31,6 +32,7 @@ const App = React.createClass({
     });
   },
   handleClick() {
+    this.setState({loading: 'visible'});
     this.getQuote();
   },
   render() {
@@ -52,7 +54,9 @@ const App = React.createClass({
                 <RaisedButton onClick={this.handleClick}
                     labelColor="white" backgroundColor="#4db6ac"
                     label="Experience the Science" style={{marginBottom:"5%"}}/>
-                <LinearProgress mode="indeterminate" />
+                  <div style={{visibility: this.state.loading}}>
+                    <LinearProgress mode="indeterminate" />
+                  </div>
               </div>
             </div>
           </Card>
