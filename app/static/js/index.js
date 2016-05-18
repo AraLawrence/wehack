@@ -33584,7 +33584,7 @@ var App = _react2.default.createClass({
         _react2.default.createElement(
           'div',
           { style: { textAlign: 'center', margin: '5%', paddingTop: "12px", paddingBottom: "6px" } },
-          _react2.default.createElement('div', { 'class': 'fb-like', 'data-href': 'http://experiencethescience.com/', 'data-width': '290', 'data-layout': 'button_count', 'data-action': 'like', 'data-show-faces': 'true', 'data-share': 'true' }),
+          _react2.default.createElement('iframe', { src: 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexperiencethescience.com%2F&width=290&layout=button_count&action=like&show_faces=true&share=true&height=46&appId=284247085246703', width: '131', height: '46', style: { border: "none", overflow: "hidden" }, scrolling: 'no', frameborder: '0', allowTransparency: 'true' }),
           _react2.default.createElement(
             'div',
             null,
