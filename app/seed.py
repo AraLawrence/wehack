@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from pipelines import QuoteTable
 
 quotes = ["Yes, the universe had a beginning. Yes, the universe continues to evolve. And yes, every one of our body's atoms is traceable to the big bang and to the thermonuclear furnace within high-mass stars. We are not simply in the universe, we are part of it. We are born from it. One might even say we have been empowered by the universe to figure itself out — and we have only just begun.",
