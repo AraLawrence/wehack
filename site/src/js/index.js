@@ -9,7 +9,7 @@ const App = React.createClass({
   getInitialState: function() {
     return {
       quoteText: "hello",
-      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
+      gifUrl: "../neillogo.png"
     }
   },
 
@@ -43,9 +43,12 @@ const App = React.createClass({
         <Gif data={this.state.gifUrl}/>
         </div>
         <div className="col s6 center">
+        <div className="container">
           <Quote data={this.state.quoteText}/>
           <div className="btn" onClick={this.handleClick}>Experience the Science</div>
         </div>
+      </div>
+
       </div>
     )
   }

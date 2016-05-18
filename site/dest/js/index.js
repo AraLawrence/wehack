@@ -51063,7 +51063,7 @@ const App = React.createClass({displayName: "App",
   getInitialState: function() {
     return {
       quoteText: "hello",
-      gifUrl: "https://media.giphy.com/media/3o7ZeoHrOtqif5U3Ek/giphy.gif"
+      gifUrl: "../neillogo.png"
     }
   },
 
@@ -51097,9 +51097,12 @@ const App = React.createClass({displayName: "App",
         React.createElement(Gif, {data: this.state.gifUrl})
         ), 
         React.createElement("div", {className: "col s6 center"}, 
+        React.createElement("div", {className: "container"}, 
           React.createElement(Quote, {data: this.state.quoteText}), 
           React.createElement("div", {className: "btn", onClick: this.handleClick}, "Experience the Science")
         )
+      )
+
       )
     )
   }

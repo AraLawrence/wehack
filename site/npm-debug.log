@@ -1,159 +1,483 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-materialize' ]
 2 info using npm@2.15.1
 3 info using node@v4.4.3
-4 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/package.json
+4 verbose install initial load of /Users/hayleenighbert/Development/wehack/site/package.json
 5 warn package.json site@1.0.0 No description
 6 warn package.json site@1.0.0 No repository field.
 7 warn package.json site@1.0.0 No README data
-8 verbose install where, deps [ '/Users/hayleenighbert/Development/wehack/site',
-8 verbose install   [ 'body-parser',
-8 verbose install     'browserify',
-8 verbose install     'envify',
-8 verbose install     'express',
-8 verbose install     'gulp',
-8 verbose install     'react',
-8 verbose install     'react-dom',
-8 verbose install     'reactify',
-8 verbose install     'uglify',
-8 verbose install     'vinyl-source-stream',
-8 verbose install     'watchify' ] ]
-9 verbose install where, peers [ '/Users/hayleenighbert/Development/wehack/site', [] ]
-10 verbose installManyTop reading for lifecycle /Users/hayleenighbert/Development/wehack/site/package.json
-11 info preinstall site@1.0.0
-12 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/body-parser/package.json
-13 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/browserify/package.json
-14 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/envify/package.json
-15 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/express/package.json
-16 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/gulp/package.json
-17 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/package.json
-18 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react/package.json
-19 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-dom/package.json
-20 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-tap-event-plugin/package.json
-21 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/reactify/package.json
-22 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/uglify/package.json
-23 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/vinyl-source-stream/package.json
-24 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/watchify/package.json
-25 info package.json uglify@0.1.5 No license field.
-26 info package.json react-tap-event-plugin@1.0.0 No license field.
-27 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/package.json
-28 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/body-parser/package.json
-29 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/browserify/package.json
-30 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/envify/package.json
-31 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/express/package.json
-32 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/gulp/package.json
-33 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/package.json
-34 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react/package.json
-35 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-dom/package.json
-36 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-tap-event-plugin/package.json
-37 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/reactify/package.json
-38 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/uglify/package.json
-39 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/vinyl-source-stream/package.json
-40 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/watchify/package.json
-41 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/.bin/browserify/package.json
-42 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/.bin/envify/package.json
-43 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/.bin/gulp/package.json
-44 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/.bin/uglify/package.json
-45 verbose targetResolver reading package data from /Users/hayleenighbert/Development/wehack/site/node_modules/.bin/watchify/package.json
-46 verbose already installed skipping uglify@^0.1.5 /Users/hayleenighbert/Development/wehack/site
-47 verbose already installed skipping vinyl-source-stream@^1.1.0 /Users/hayleenighbert/Development/wehack/site
-48 verbose already installed skipping watchify@^3.6.1 /Users/hayleenighbert/Development/wehack/site
-49 verbose already installed skipping body-parser@^1.14.1 /Users/hayleenighbert/Development/wehack/site
-50 verbose already installed skipping browserify@^12.0.1 /Users/hayleenighbert/Development/wehack/site
-51 verbose already installed skipping envify@^3.4.0 /Users/hayleenighbert/Development/wehack/site
-52 verbose already installed skipping express@^4.13.3 /Users/hayleenighbert/Development/wehack/site
-53 verbose already installed skipping gulp@^3.9.0 /Users/hayleenighbert/Development/wehack/site
-54 verbose already installed skipping react@^0.14.3 /Users/hayleenighbert/Development/wehack/site
-55 verbose already installed skipping react-dom@^0.14.3 /Users/hayleenighbert/Development/wehack/site
-56 verbose already installed skipping reactify@^1.1.1 /Users/hayleenighbert/Development/wehack/site
-57 silly install resolved []
-58 info build /Users/hayleenighbert/Development/wehack/site
-59 info linkStuff site@1.0.0
-60 silly linkStuff site@1.0.0 has /Users/hayleenighbert/Development/wehack as its parent node_modules
-61 verbose linkBins site@1.0.0
-62 verbose linkMans site@1.0.0
-63 verbose rebuildBundles site@1.0.0
-64 verbose rebuildBundles [ '.bin',
-64 verbose rebuildBundles   'body-parser',
-64 verbose rebuildBundles   'browserify',
-64 verbose rebuildBundles   'envify',
-64 verbose rebuildBundles   'express',
-64 verbose rebuildBundles   'gulp',
-64 verbose rebuildBundles   'material-ui',
-64 verbose rebuildBundles   'react',
-64 verbose rebuildBundles   'react-dom',
-64 verbose rebuildBundles   'react-tap-event-plugin',
-64 verbose rebuildBundles   'reactify',
-64 verbose rebuildBundles   'uglify',
-64 verbose rebuildBundles   'vinyl-source-stream',
-64 verbose rebuildBundles   'watchify' ]
-65 verbose rebuild bundle /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui
-66 info build /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui
-67 info preinstall material-ui@0.15.0
-68 info linkStuff material-ui@0.15.0
-69 silly linkStuff material-ui@0.15.0 has /Users/hayleenighbert/Development/wehack/site/node_modules as its parent node_modules
-70 verbose linkBins material-ui@0.15.0
-71 verbose linkMans material-ui@0.15.0
-72 verbose rebuildBundles material-ui@0.15.0
-73 verbose rebuildBundles [ 'inline-style-prefixer',
-73 verbose rebuildBundles   'keycode',
-73 verbose rebuildBundles   'lodash.merge',
-73 verbose rebuildBundles   'lodash.throttle',
-73 verbose rebuildBundles   'react',
-73 verbose rebuildBundles   'react-addons-create-fragment',
-73 verbose rebuildBundles   'react-addons-transition-group',
-73 verbose rebuildBundles   'react-addons-update',
-73 verbose rebuildBundles   'react-event-listener',
-73 verbose rebuildBundles   'recompose',
-73 verbose rebuildBundles   'simple-assign',
-73 verbose rebuildBundles   'warning' ]
-74 verbose rebuild bundle /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/node_modules/react
-75 info build /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/node_modules/react
-76 info preinstall react@15.0.2
-77 info linkStuff react@15.0.2
-78 silly linkStuff react@15.0.2 has /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/node_modules as its parent node_modules
-79 verbose linkBins react@15.0.2
-80 verbose linkMans react@15.0.2
-81 verbose rebuildBundles react@15.0.2
-82 verbose rebuildBundles [ 'fbjs', 'loose-envify', 'object-assign' ]
-83 info install react@15.0.2
-84 info postinstall react@15.0.2
-85 info install material-ui@0.15.0
-86 info postinstall material-ui@0.15.0
-87 verbose rebuild bundle /Users/hayleenighbert/Development/wehack/site/node_modules/react-tap-event-plugin
-88 info build /Users/hayleenighbert/Development/wehack/site/node_modules/react-tap-event-plugin
-89 info preinstall react-tap-event-plugin@1.0.0
-90 info linkStuff react-tap-event-plugin@1.0.0
-91 silly linkStuff react-tap-event-plugin@1.0.0 has /Users/hayleenighbert/Development/wehack/site/node_modules as its parent node_modules
-92 verbose linkBins react-tap-event-plugin@1.0.0
-93 verbose linkMans react-tap-event-plugin@1.0.0
-94 verbose rebuildBundles react-tap-event-plugin@1.0.0
-95 verbose rebuildBundles [ 'fbjs' ]
-96 info install react-tap-event-plugin@1.0.0
-97 info postinstall react-tap-event-plugin@1.0.0
-98 info install site@1.0.0
-99 info postinstall site@1.0.0
-100 info prepublish site@1.0.0
-101 verbose validateInstall loading /Users/hayleenighbert/Development/wehack/site/package.json for validation
-102 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-102 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
-102 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
-102 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-102 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-102 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-102 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-102 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-102 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-102 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-102 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-103 verbose cwd /Users/hayleenighbert/Development/wehack/site
-104 error Darwin 15.4.0
-105 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
-106 error node v4.4.3
-107 error npm  v2.15.1
-108 error code EPEERINVALID
-109 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-109 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
-109 error peerinvalid Peer react-tap-event-plugin@1.0.0 wants react@^15.0.0-0
-109 error peerinvalid Peer material-ui@0.15.0 wants react@^15.0.0
-110 verbose exit [ 1, true ]
+8 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/body-parser/package.json
+9 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/browserify/package.json
+10 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/envify/package.json
+11 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/express/package.json
+12 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/gulp/package.json
+13 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/material-ui/package.json
+14 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react/package.json
+15 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-dom/package.json
+16 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-fittext/package.json
+17 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/react-tap-event-plugin/package.json
+18 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/reactify/package.json
+19 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/uglify/package.json
+20 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/vinyl-source-stream/package.json
+21 verbose installManyTop reading scoped package data from /Users/hayleenighbert/Development/wehack/site/node_modules/watchify/package.json
+22 info package.json react-fittext@0.1.1 No repository field.
+23 info package.json react-fittext@0.1.1 license should be a valid SPDX license expression
+24 info package.json uglify@0.1.5 No license field.
+25 info package.json react-tap-event-plugin@1.0.0 No license field.
+26 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/package.json
+27 silly cache add args [ 'react-materialize', null ]
+28 verbose cache add spec react-materialize
+29 silly cache add parsed spec Result {
+29 silly cache add   raw: 'react-materialize',
+29 silly cache add   scope: null,
+29 silly cache add   name: 'react-materialize',
+29 silly cache add   rawSpec: '',
+29 silly cache add   spec: 'latest',
+29 silly cache add   type: 'tag' }
+30 silly addNamed react-materialize@latest
+31 verbose addNamed "latest" is being treated as a dist-tag for react-materialize
+32 info addNameTag [ 'react-materialize', 'latest' ]
+33 silly mapToRegistry name react-materialize
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'react-materialize',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'react-materialize',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/react-materialize
+38 verbose addNameTag registry:https://registry.npmjs.org/react-materialize not in flight; fetching
+39 verbose request uri https://registry.npmjs.org/react-materialize
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 11:42:38 PM
+42 verbose request id 13809ef3c1ab2650
+43 http request GET https://registry.npmjs.org/react-materialize
+44 http 200 https://registry.npmjs.org/react-materialize
+45 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+45 verbose headers   etag: '"5AXEHX4KH11FBCPIASEV2DVU3"',
+45 verbose headers   'content-type': 'application/json',
+45 verbose headers   'content-encoding': 'gzip',
+45 verbose headers   'cache-control': 'max-age=300',
+45 verbose headers   'content-length': '4177',
+45 verbose headers   'accept-ranges': 'bytes',
+45 verbose headers   date: 'Sun, 15 May 2016 06:42:39 GMT',
+45 verbose headers   via: '1.1 varnish',
+45 verbose headers   age: '0',
+45 verbose headers   connection: 'keep-alive',
+45 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+45 verbose headers   'x-cache': 'MISS',
+45 verbose headers   'x-cache-hits': '0',
+45 verbose headers   'x-timer': 'S1463294558.906463,VS0,VE354',
+45 verbose headers   vary: 'Accept-Encoding' }
+46 silly get cb [ 200,
+46 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+46 silly get     etag: '"5AXEHX4KH11FBCPIASEV2DVU3"',
+46 silly get     'content-type': 'application/json',
+46 silly get     'content-encoding': 'gzip',
+46 silly get     'cache-control': 'max-age=300',
+46 silly get     'content-length': '4177',
+46 silly get     'accept-ranges': 'bytes',
+46 silly get     date: 'Sun, 15 May 2016 06:42:39 GMT',
+46 silly get     via: '1.1 varnish',
+46 silly get     age: '0',
+46 silly get     connection: 'keep-alive',
+46 silly get     'x-served-by': 'cache-sjc3124-SJC',
+46 silly get     'x-cache': 'MISS',
+46 silly get     'x-cache-hits': '0',
+46 silly get     'x-timer': 'S1463294558.906463,VS0,VE354',
+46 silly get     vary: 'Accept-Encoding' } ]
+47 verbose get saving react-materialize to /Users/hayleenighbert/.npm/registry.npmjs.org/react-materialize/.cache.json
+48 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+49 silly addNameTag next cb for react-materialize with tag latest
+50 silly addNamed react-materialize@0.14.3
+51 verbose addNamed "0.14.3" is a plain semver version for react-materialize
+52 silly mapToRegistry name react-materialize
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry data Result {
+55 silly mapToRegistry   raw: 'react-materialize',
+55 silly mapToRegistry   scope: null,
+55 silly mapToRegistry   name: 'react-materialize',
+55 silly mapToRegistry   rawSpec: '',
+55 silly mapToRegistry   spec: 'latest',
+55 silly mapToRegistry   type: 'tag' }
+56 silly mapToRegistry uri https://registry.npmjs.org/react-materialize
+57 verbose addRemoteTarball https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz not in flight; adding
+58 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz',
+58 verbose addRemoteTarball   '0dde74f368b5da656aa7e3c0a9280cd45a90dae1' ]
+59 info retry fetch attempt 1 at 11:42:39 PM
+60 info attempt registry request try #1 at 11:42:39 PM
+61 http fetch GET https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz
+62 http fetch 200 https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz
+63 silly fetchAndShaCheck shasum 0dde74f368b5da656aa7e3c0a9280cd45a90dae1
+64 verbose addTmpTarball /var/folders/45/m5rrtntx35vblcj6rdjx5nqw0000gn/T/npm-8844-b8aa978c/registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz not in flight; adding
+65 verbose addTmpTarball already have metadata; skipping unpack for react-materialize@0.14.3
+66 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+67 silly cache afterAdd react-materialize@0.14.3
+68 verbose afterAdd /Users/hayleenighbert/.npm/react-materialize/0.14.3/package/package.json not in flight; writing
+69 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+70 verbose afterAdd /Users/hayleenighbert/.npm/react-materialize/0.14.3/package/package.json written
+71 silly install resolved [ { name: 'react-materialize',
+71 silly install resolved     version: '0.14.3',
+71 silly install resolved     description: 'Material design components for react',
+71 silly install resolved     main: './lib/index.js',
+71 silly install resolved     files: [ 'LICENSE', 'README.md', 'lib' ],
+71 silly install resolved     scripts:
+71 silly install resolved      { test: 'npm run lint && karma start --single-run',
+71 silly install resolved        watch: 'karma start',
+71 silly install resolved        build: 'babel -d lib src',
+71 silly install resolved        lint: 'eslint src',
+71 silly install resolved        fix: 'eslint src --fix',
+71 silly install resolved        release: 'npm run build && npm publish' },
+71 silly install resolved     repository:
+71 silly install resolved      { type: 'git',
+71 silly install resolved        url: 'git+https://github.com/react-materialize/react-materialize.git' },
+71 silly install resolved     keywords: [ 'material', 'react', 'materializecss', 'react-component' ],
+71 silly install resolved     author: { name: 'Isaiah Peng', email: 'issaria@gmail.com' },
+71 silly install resolved     license: 'MIT',
+71 silly install resolved     bugs: { url: 'https://github.com/react-materialize/react-materialize/issues' },
+71 silly install resolved     homepage: 'https://github.com/react-materialize/react-materialize',
+71 silly install resolved     devDependencies:
+71 silly install resolved      { 'babel-cli': '^6.1.18',
+71 silly install resolved        'babel-core': '^6.1.21',
+71 silly install resolved        'babel-eslint': '^4.1.8',
+71 silly install resolved        'babel-loader': '^6.2.0',
+71 silly install resolved        'babel-polyfill': '^6.1.19',
+71 silly install resolved        'babel-preset-es2015': '^6.1.18',
+71 silly install resolved        'babel-preset-react': '^6.1.18',
+71 silly install resolved        'babel-preset-stage-0': '^6.1.18',
+71 silly install resolved        chai: '^3.5.0',
+71 silly install resolved        'es5-shim': '^4.2.0',
+71 silly install resolved        eslint: '^1.10.3',
+71 silly install resolved        'eslint-plugin-react': '^3.16.1',
+71 silly install resolved        karma: '^0.13.15',
+71 silly install resolved        'karma-babel-preprocessor': '^6.0.1',
+71 silly install resolved        'karma-mocha': '^0.2.0',
+71 silly install resolved        'karma-phantomjs-launcher': '^1.0.0',
+71 silly install resolved        'karma-sinon-chai': '^1.2.0',
+71 silly install resolved        'karma-sourcemap-loader': '^0.3.6',
+71 silly install resolved        'karma-webpack': '^1.7.0',
+71 silly install resolved        lolex: '^1.4.0',
+71 silly install resolved        mocha: '^2.3.3',
+71 silly install resolved        'phantomjs-prebuilt': '^2.1.7',
+71 silly install resolved        react: '>=0.14.0',
+71 silly install resolved        'react-addons-test-utils': '>=0.14.0',
+71 silly install resolved        'react-dom': '>=0.14.0',
+71 silly install resolved        sinon: '^1.17.3',
+71 silly install resolved        'sinon-chai': '^2.8.0',
+71 silly install resolved        webpack: '^1.12.6' },
+71 silly install resolved     peerDependencies: { react: '>=0.14.0', 'react-dom': '>=0.14.0' },
+71 silly install resolved     dependencies: { classnames: '^2.1.3' },
+71 silly install resolved     gitHead: '7841486de07e0bfe37ecdafaffbfe512504a066a',
+71 silly install resolved     _id: 'react-materialize@0.14.3',
+71 silly install resolved     _shasum: '0dde74f368b5da656aa7e3c0a9280cd45a90dae1',
+71 silly install resolved     _from: 'react-materialize@latest',
+71 silly install resolved     _npmVersion: '3.8.1',
+71 silly install resolved     _nodeVersion: '5.8.0',
+71 silly install resolved     _npmUser: { name: 'isaiah', email: 'isaiah@gentoo.org' },
+71 silly install resolved     dist:
+71 silly install resolved      { shasum: '0dde74f368b5da656aa7e3c0a9280cd45a90dae1',
+71 silly install resolved        tarball: 'https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz' },
+71 silly install resolved     maintainers: [ [Object] ],
+71 silly install resolved     _npmOperationalInternal:
+71 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+71 silly install resolved        tmp: 'tmp/react-materialize-0.14.3.tgz_1459257865975_0.3288277650717646' },
+71 silly install resolved     directories: {},
+71 silly install resolved     _resolved: 'https://registry.npmjs.org/react-materialize/-/react-materialize-0.14.3.tgz' } ]
+72 info install react-materialize@0.14.3 into /Users/hayleenighbert/Development/wehack/site
+73 info installOne react-materialize@0.14.3
+74 verbose installOne of react-materialize to /Users/hayleenighbert/Development/wehack/site not in flight; installing
+75 verbose correctMkdir /Users/hayleenighbert/.npm/_locks correctMkdir not in flight; initializing
+76 verbose lock using /Users/hayleenighbert/.npm/_locks/react-materialize-b60d8b3fb9428517.lock for /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+77 silly install write writing react-materialize 0.14.3 to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+78 verbose unbuild node_modules/react-materialize
+79 silly gentlyRm /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize is being purged from base /Users/hayleenighbert/Development/wehack/site
+80 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+81 verbose tar unpack /Users/hayleenighbert/.npm/react-materialize/0.14.3/package.tgz
+82 verbose tar unpacking to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+83 silly gentlyRm /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize is being purged
+84 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm extractEntry LICENSE
+89 silly gunzTarPerm extractEntry lib/Badge.js
+90 silly gunzTarPerm extractEntry lib/MenuItem.js
+91 silly gunzTarPerm extractEntry lib/Modal.js
+92 silly gunzTarPerm extractEntry lib/NavItem.js
+93 silly gunzTarPerm extractEntry lib/MediaBox.js
+94 silly gunzTarPerm extractEntry lib/Overlay.js
+95 silly gunzTarPerm extractEntry lib/OverlayTrigger.js
+96 silly gunzTarPerm extractEntry lib/Pagination.js
+97 silly gunzTarPerm extractEntry lib/PaginationButton.js
+98 silly gunzTarPerm extractEntry lib/Preloader.js
+99 silly gunzTarPerm extractEntry lib/Input.js
+100 silly gunzTarPerm extractEntry lib/ProgressBar.js
+101 silly gunzTarPerm extractEntry lib/Icon.js
+102 silly gunzTarPerm extractEntry lib/Row.js
+103 silly gunzTarPerm extractEntry lib/Footer.js
+104 silly gunzTarPerm extractEntry lib/SearchForm.js
+105 silly gunzTarPerm extractEntry lib/Dropdown.js
+106 silly gunzTarPerm extractEntry lib/SideNav.js
+107 silly gunzTarPerm extractEntry lib/CollectionItem.js
+108 silly gunzTarPerm extractEntry lib/Slide.js
+109 silly gunzTarPerm extractEntry lib/Collection.js
+110 silly gunzTarPerm extractEntry lib/Slider.js
+111 silly gunzTarPerm extractEntry lib/CollapsibleItem.js
+112 silly gunzTarPerm extractEntry lib/Tab.js
+113 silly gunzTarPerm extractEntry lib/Collapsible.js
+114 silly gunzTarPerm extractEntry lib/Table.js
+115 silly gunzTarPerm extractEntry lib/Col.js
+116 silly gunzTarPerm extractEntry lib/Tabs.js
+117 silly gunzTarPerm extractEntry lib/Chip.js
+118 silly gunzTarPerm extractEntry lib/Tag.js
+119 silly gunzTarPerm extractEntry lib/CardTitle.js
+120 silly gunzTarPerm extractEntry lib/Toast.js
+121 silly gunzTarPerm extractEntry lib/CardPanel.js
+122 silly gunzTarPerm extractEntry lib/Tooltip.js
+123 silly gunzTarPerm extractEntry lib/Card.js
+124 silly gunzTarPerm extractEntry lib/constants.js
+125 silly gunzTarPerm extractEntry lib/Button.js
+126 silly gunzTarPerm extractEntry lib/idgen.js
+127 silly gunzTarPerm extractEntry lib/Breadcrumb.js
+128 silly gunzTarPerm extractEntry lib/index.js
+129 silly gunzTarPerm extractEntry lib/Navbar.js
+130 verbose write writing to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/package.json
+131 info preinstall react-materialize@0.14.3
+132 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/package.json
+133 silly prepareForInstallMany adding classnames@^2.1.3 from react-materialize dependencies
+134 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/package.json
+135 silly cache add args [ 'classnames@^2.1.3', null ]
+136 verbose cache add spec classnames@^2.1.3
+137 silly cache add parsed spec Result {
+137 silly cache add   raw: 'classnames@^2.1.3',
+137 silly cache add   scope: null,
+137 silly cache add   name: 'classnames',
+137 silly cache add   rawSpec: '^2.1.3',
+137 silly cache add   spec: '>=2.1.3 <3.0.0',
+137 silly cache add   type: 'range' }
+138 silly addNamed classnames@>=2.1.3 <3.0.0
+139 verbose addNamed ">=2.1.3 <3.0.0" is a valid semver range for classnames
+140 silly addNameRange { name: 'classnames', range: '>=2.1.3 <3.0.0', hasData: false }
+141 silly mapToRegistry name classnames
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'classnames',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   name: 'classnames',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/classnames
+146 verbose addNameRange registry:https://registry.npmjs.org/classnames not in flight; fetching
+147 verbose request uri https://registry.npmjs.org/classnames
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 11:42:39 PM
+150 http request GET https://registry.npmjs.org/classnames
+151 http 200 https://registry.npmjs.org/classnames
+152 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+152 verbose headers   etag: '"46DWQZ91Y4UP6DJV7AORDZGQN"',
+152 verbose headers   'content-type': 'application/json',
+152 verbose headers   'content-encoding': 'gzip',
+152 verbose headers   'cache-control': 'max-age=300',
+152 verbose headers   'content-length': '6659',
+152 verbose headers   'accept-ranges': 'bytes',
+152 verbose headers   date: 'Sun, 15 May 2016 06:42:39 GMT',
+152 verbose headers   via: '1.1 varnish',
+152 verbose headers   age: '0',
+152 verbose headers   connection: 'keep-alive',
+152 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+152 verbose headers   'x-cache': 'HIT',
+152 verbose headers   'x-cache-hits': '1',
+152 verbose headers   'x-timer': 'S1463294559.626647,VS0,VE350',
+152 verbose headers   vary: 'Accept-Encoding' }
+153 silly get cb [ 200,
+153 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+153 silly get     etag: '"46DWQZ91Y4UP6DJV7AORDZGQN"',
+153 silly get     'content-type': 'application/json',
+153 silly get     'content-encoding': 'gzip',
+153 silly get     'cache-control': 'max-age=300',
+153 silly get     'content-length': '6659',
+153 silly get     'accept-ranges': 'bytes',
+153 silly get     date: 'Sun, 15 May 2016 06:42:39 GMT',
+153 silly get     via: '1.1 varnish',
+153 silly get     age: '0',
+153 silly get     connection: 'keep-alive',
+153 silly get     'x-served-by': 'cache-sjc3124-SJC',
+153 silly get     'x-cache': 'HIT',
+153 silly get     'x-cache-hits': '1',
+153 silly get     'x-timer': 'S1463294559.626647,VS0,VE350',
+153 silly get     vary: 'Accept-Encoding' } ]
+154 verbose get saving classnames to /Users/hayleenighbert/.npm/registry.npmjs.org/classnames/.cache.json
+155 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+156 silly addNameRange number 2 { name: 'classnames', range: '>=2.1.3 <3.0.0', hasData: true }
+157 silly addNameRange versions [ 'classnames',
+157 silly addNameRange   [ '1.0.0',
+157 silly addNameRange     '1.1.0',
+157 silly addNameRange     '1.1.1',
+157 silly addNameRange     '1.1.2',
+157 silly addNameRange     '1.1.3',
+157 silly addNameRange     '1.1.4',
+157 silly addNameRange     '1.2.0',
+157 silly addNameRange     '1.2.1',
+157 silly addNameRange     '1.2.2',
+157 silly addNameRange     '2.0.0',
+157 silly addNameRange     '2.1.0',
+157 silly addNameRange     '2.1.1',
+157 silly addNameRange     '2.1.2',
+157 silly addNameRange     '2.1.3',
+157 silly addNameRange     '2.1.4',
+157 silly addNameRange     '2.1.5',
+157 silly addNameRange     '2.2.0',
+157 silly addNameRange     '2.2.1',
+157 silly addNameRange     '2.2.2',
+157 silly addNameRange     '2.2.3',
+157 silly addNameRange     '2.2.4',
+157 silly addNameRange     '2.2.5' ] ]
+158 silly addNamed classnames@2.2.5
+159 verbose addNamed "2.2.5" is a plain semver version for classnames
+160 silly mapToRegistry name classnames
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry data Result {
+163 silly mapToRegistry   raw: 'classnames',
+163 silly mapToRegistry   scope: null,
+163 silly mapToRegistry   name: 'classnames',
+163 silly mapToRegistry   rawSpec: '',
+163 silly mapToRegistry   spec: 'latest',
+163 silly mapToRegistry   type: 'tag' }
+164 silly mapToRegistry uri https://registry.npmjs.org/classnames
+165 verbose addRemoteTarball https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz not in flight; adding
+166 verbose addRemoteTarball [ 'https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz',
+166 verbose addRemoteTarball   'fb3801d453467649ef3603c7d61a02bd129bde6d' ]
+167 info retry fetch attempt 1 at 11:42:40 PM
+168 info attempt registry request try #1 at 11:42:40 PM
+169 http fetch GET https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz
+170 http fetch 200 https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz
+171 silly fetchAndShaCheck shasum fb3801d453467649ef3603c7d61a02bd129bde6d
+172 verbose addTmpTarball /var/folders/45/m5rrtntx35vblcj6rdjx5nqw0000gn/T/npm-8844-b8aa978c/registry.npmjs.org/classnames/-/classnames-2.2.5.tgz not in flight; adding
+173 verbose addTmpTarball already have metadata; skipping unpack for classnames@2.2.5
+174 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+175 silly cache afterAdd classnames@2.2.5
+176 verbose afterAdd /Users/hayleenighbert/.npm/classnames/2.2.5/package/package.json not in flight; writing
+177 verbose correctMkdir /Users/hayleenighbert/.npm correctMkdir not in flight; initializing
+178 verbose afterAdd /Users/hayleenighbert/.npm/classnames/2.2.5/package/package.json written
+179 silly install resolved [ { name: 'classnames',
+179 silly install resolved     version: '2.2.5',
+179 silly install resolved     description: 'A simple utility for conditionally joining classNames together',
+179 silly install resolved     main: 'index.js',
+179 silly install resolved     author: { name: 'Jed Watson' },
+179 silly install resolved     license: 'MIT',
+179 silly install resolved     repository:
+179 silly install resolved      { type: 'git',
+179 silly install resolved        url: 'git+https://github.com/JedWatson/classnames.git' },
+179 silly install resolved     scripts:
+179 silly install resolved      { benchmarks: 'node ./benchmarks/run',
+179 silly install resolved        unit: 'mocha tests/*.js',
+179 silly install resolved        test: 'npm run unit' },
+179 silly install resolved     keywords:
+179 silly install resolved      [ 'react',
+179 silly install resolved        'css',
+179 silly install resolved        'classes',
+179 silly install resolved        'classname',
+179 silly install resolved        'classnames',
+179 silly install resolved        'util',
+179 silly install resolved        'utility' ],
+179 silly install resolved     devDependencies: { benchmark: '^1.0.0', mocha: '^2.1.0' },
+179 silly install resolved     gitHead: '1fc62c0490bfc7d67a1178bbb60897cfa0580c7b',
+179 silly install resolved     bugs: { url: 'https://github.com/JedWatson/classnames/issues' },
+179 silly install resolved     homepage: 'https://github.com/JedWatson/classnames#readme',
+179 silly install resolved     _id: 'classnames@2.2.5',
+179 silly install resolved     _shasum: 'fb3801d453467649ef3603c7d61a02bd129bde6d',
+179 silly install resolved     _from: 'classnames@>=2.1.3 <3.0.0',
+179 silly install resolved     _npmVersion: '3.3.6',
+179 silly install resolved     _nodeVersion: '5.0.0',
+179 silly install resolved     _npmUser: { name: 'jedwatson', email: 'jed.watson@me.com' },
+179 silly install resolved     maintainers: [ [Object] ],
+179 silly install resolved     dist:
+179 silly install resolved      { shasum: 'fb3801d453467649ef3603c7d61a02bd129bde6d',
+179 silly install resolved        tarball: 'https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz' },
+179 silly install resolved     _npmOperationalInternal:
+179 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+179 silly install resolved        tmp: 'tmp/classnames-2.2.5.tgz_1462195436082_0.17347457958385348' },
+179 silly install resolved     directories: {},
+179 silly install resolved     _resolved: 'https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz' } ]
+180 info install classnames@2.2.5 into /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+181 info installOne classnames@2.2.5
+182 verbose installOne of classnames to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize not in flight; installing
+183 verbose correctMkdir /Users/hayleenighbert/.npm/_locks correctMkdir not in flight; initializing
+184 verbose lock using /Users/hayleenighbert/.npm/_locks/classnames-d33bd95f52b92c5d.lock for /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+185 silly install write writing classnames 2.2.5 to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+186 verbose unbuild node_modules/react-materialize/node_modules/classnames
+187 silly gentlyRm /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames is being purged from base /Users/hayleenighbert/Development/wehack/site
+188 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+189 verbose tar unpack /Users/hayleenighbert/.npm/classnames/2.2.5/package.tgz
+190 verbose tar unpacking to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+191 silly gentlyRm /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames is being purged
+192 verbose gentlyRm don't care about contents; nuking /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+193 silly gunzTarPerm modes [ '755', '644' ]
+194 silly gunzTarPerm extractEntry package.json
+195 silly gunzTarPerm extractEntry README.md
+196 silly gunzTarPerm extractEntry LICENSE
+197 silly gunzTarPerm extractEntry bind.js
+198 silly gunzTarPerm extractEntry dedupe.js
+199 silly gunzTarPerm extractEntry index.js
+200 silly gunzTarPerm extractEntry CONTRIBUTING.md
+201 silly gunzTarPerm extractEntry bower.json
+202 silly gunzTarPerm extractEntry HISTORY.md
+203 verbose write writing to /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames/package.json
+204 info preinstall classnames@2.2.5
+205 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames/package.json
+206 verbose readDependencies loading dependencies from /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames/package.json
+207 silly install resolved []
+208 verbose about to build /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+209 info build /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+210 info linkStuff classnames@2.2.5
+211 silly linkStuff classnames@2.2.5 has /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules as its parent node_modules
+212 verbose linkBins classnames@2.2.5
+213 verbose linkMans classnames@2.2.5
+214 verbose rebuildBundles classnames@2.2.5
+215 info install classnames@2.2.5
+216 info postinstall classnames@2.2.5
+217 verbose unlock done using /Users/hayleenighbert/.npm/_locks/classnames-d33bd95f52b92c5d.lock for /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize/node_modules/classnames
+218 verbose about to build /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+219 info build /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+220 info linkStuff react-materialize@0.14.3
+221 silly linkStuff react-materialize@0.14.3 has /Users/hayleenighbert/Development/wehack/site/node_modules as its parent node_modules
+222 verbose linkBins react-materialize@0.14.3
+223 verbose linkMans react-materialize@0.14.3
+224 verbose rebuildBundles react-materialize@0.14.3
+225 verbose rebuildBundles [ 'classnames' ]
+226 info install react-materialize@0.14.3
+227 info postinstall react-materialize@0.14.3
+228 verbose unlock done using /Users/hayleenighbert/.npm/_locks/react-materialize-b60d8b3fb9428517.lock for /Users/hayleenighbert/Development/wehack/site/node_modules/react-materialize
+229 verbose validateInstall loading /Users/hayleenighbert/Development/wehack/site/package.json for validation
+230 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+230 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+230 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+231 verbose cwd /Users/hayleenighbert/Development/wehack/site
+232 error Darwin 15.4.0
+233 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-materialize"
+234 error node v4.4.3
+235 error npm  v2.15.1
+236 error code EPEERINVALID
+237 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+237 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
+237 error peerinvalid Peer react-materialize@0.14.3 wants react@>=0.14.0
+237 error peerinvalid Peer react-tap-event-plugin@1.0.0 wants react@^15.0.0-0
+237 error peerinvalid Peer material-ui@0.15.0 wants react@^15.0.0
+238 verbose exit [ 1, true ]

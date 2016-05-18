@@ -1,0 +1,27 @@
+html {
+  background: url(../spacebackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	margin-bottom: inherit;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+.nav {
+	background-color: black;
+}
+.nav-wrapper {
+	background-color: black;
+}
+
+.btn {
+	background-color: black;
+}
+
+.mainImage {
+	align-content: center;
+	width: 25%;
+}
