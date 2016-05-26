@@ -1,5 +1,5 @@
 # Experience the Science
-## App developed by [Ara Lawrence's portfolio](http://www.aralawrence.com/ "Ara Lawrence") and [Haylee Nighbert's portfolio](http://www.hayleenighbert.com "Haylee Nighbert")
+### App developed by [Ara Lawrence](http://www.aralawrence.com/ "Ara Lawrence") and [Haylee Nighbert](http://www.hayleenighbert.com "Haylee Nighbert")
 Experience the Science is an app that pairs a random Neil de Grasse Tyson quote with a random gif of the astrophysicist using the Giphy API.
 
 Built with
